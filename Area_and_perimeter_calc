@@ -1,0 +1,42 @@
+print("HELLO! I am your area and perimeter calculator")
+
+print("\n First lets select what type of shape we need to calculate the are and perimeter of:" \
+"\n 1.Square \n 2.Rectangle \n 3.Triangle \n 4.Circle")
+shape=input("\n \n \nTo select the shape type in its number\n\n\n")
+
+shape =int(shape)
+l = 0
+w = 0
+pi = 3.14
+area = 0
+peri = 0
+
+if(shape==1):
+    print("THE SHAPE SELECTED IS A SQUARE")
+    l = int(input("\nEnter the length-----"))
+    area = (l*l)
+    peri = (l*4)
+if(shape==2):
+    print("THE SHAPE SELECTED IS A RECTANGLE")
+    l = int(input("\nEnter the length-----"))
+    w = int(input("\nEnter the breadth/width-----"))
+    area = (l*w)
+    peri = ((l*2)+(w*2))
+if(shape==3):
+    print("THE SHAPE SELECTED IS A TRIANGLE")
+    l = int(input("Enter the length of the base-----"))
+    l1 = int(input("\nEnter the length of the side 2-----"))
+    l2 = int(input("\nEnter the length of the side 3-----"))
+    w = int(input("\nEnter the height of the triangle-----"))
+    area = ((l/2)*w)
+    peri = (l+l1+l2)   
+if(shape==4):
+    print("THE SHAPE SELECTED IS A CIRCLE")
+    l = int(input("\nEnter the radius-----"))
+    area = int((pi*(l*l)))
+    peri = int((2*(pi*l)))
+else:
+    print("ERROR")
+
+print("AREA = ",area)
+print("PERIMETER = ",peri)
